@@ -1,3 +1,5 @@
+const btnRandom = document.querySelector('.btnRandom')
+
 const dadJoke = [
     "Why do fathers take an extra pair of socks when they go golfing?",
     "What do a tick and the Eiffel Tower have in common?",
@@ -23,15 +25,26 @@ const dadJokeAnswer = [
     "To the boat doc."
  ];
 
-
-function randomJoke() {
+document.querySelector("#btnRandom").onclick = function() {
+    document.getElementById("joke-Answer").innerHTML = "";
     const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min)
     const jokeNumber = randomNumber(0, dadJoke.length)
     console.log(dadJoke[jokeNumber])
+    document.getElementById("joke-Question").innerHTML = dadJoke[jokeNumber];
     function jokeAnswer() {
     console.log(dadJokeAnswer[jokeNumber])
+    document.getElementById("joke-Answer").innerHTML = dadJokeAnswer[jokeNumber];
     }
     setTimeout(jokeAnswer, 4000)
+    
+    let counter = 4;
+    const i = setInterval(function(){
+    console.log(counter);
+    counter--;
+    document.getElementById("countdown-timer").innerHTML = counter;
+    if(counter === 0) {
+        clearInterval(i);
+        document.getElementById("countdown-timer").innerHTML = "";
+    }
+}, 1000);
 }
-
-randomJoke()
