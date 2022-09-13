@@ -4,11 +4,33 @@ body {
     background-image: url('Images/throwpillow.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 100vh;
-    width: 100vw;
     font-size: 16px;
     font-family: 'trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+
+body {
+    background-size: cover;
+    background-image: url('Images/harold-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+h2#joke-Question, h2#joke-Answer {
+    font-size: 2rem;
+    margin: 3rem 2rem;
+}
+
+p#countdown-timer {
+    font-size: 3rem;
+}
+
+button#btnRandom {
+    bottom: 5rem;
+}
 }
 
 main {
@@ -21,14 +43,14 @@ padding: 1rem 2rem;
 border-radius: 0.5rem;
 font-size: 1.5rem;
 position: absolute;
-bottom: 10rem;
+bottom: 6rem;
 margin: 0 auto;
 left: 0; 
 right: 0;
 width: 20rem;
 }
 
-#joke-Question, #joke-Answer {
+h2 {
     font-size: 3rem;
     margin: 8rem 3rem;
 }
