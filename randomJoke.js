@@ -10,6 +10,12 @@ const dadJoke = [
     "What did Baby Corn say to Mama Corn?",
     "What do you call a poor Santa Claus?",
     "Where do boats go when they're sick?",
+    "Why don't eggs tell jokes?",
+    "Why couldn't the bicycle stand up by itself?",
+    "What concert costs just 45 cents?",
+    "How do you make a tissue dance?",
+    "Why did the math book look so sad?",
+    "What do you call cheese that isn't yours?",
 ];
 
 
@@ -22,7 +28,13 @@ const dadJokeAnswer = [
     "Because if they flew over the bay, we'd call them bagels.",
     "Where's Pop Corn?",
     "St. Nickel-less.",
-    "To the boat doc."
+    "To the boat doc.",
+    "They'd crack each other up.",
+    "It was two tired.",
+    "50 Cent featuring Nickelback!",
+    "You put a little boogie in it.",
+    "Because of all of its problems!",
+    "Nacho cheese.",
  ];
 
 document.querySelector("#btnRandom").onclick = function() {
